@@ -1,0 +1,6 @@
+tradeMe:
+  httpClient:
+    connectionTimeout: 5000ms
+    timeout: 5000ms
+  
+  baseUrl: https://api.tmsandbox.co.nz/
