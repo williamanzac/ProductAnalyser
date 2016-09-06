@@ -1,6 +1,8 @@
 tradeMe:
   httpClient:
     connectionTimeout: 5000ms
-    timeout: 5000ms
+    timeout: 10000ms
   
   baseUrl: https://api.tmsandbox.co.nz/
+  key: 3A73260D148477F030703CD7C14DD783
+  secret: 4EDDF186B7AAA320E32FAFD2F16D7CFE
