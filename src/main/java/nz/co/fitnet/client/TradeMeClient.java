@@ -2,11 +2,11 @@ package nz.co.fitnet.client;
 
 import static java.text.MessageFormat.format;
 
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -15,8 +15,8 @@ import javax.ws.rs.core.MediaType;
 
 import nz.co.fitnet.TradeMeConfig;
 import nz.co.fitnet.api.Category;
+import nz.co.fitnet.api.CategoryDetails;
 
-import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
@@ -57,7 +57,7 @@ public class TradeMeClient {
 		return false;
 	}
 
-	private InputStream get(final String subUrl, final Map<String, Object> params) throws ClientException {
+	InputStream get(final String subUrl, final Map<String, Object> params) throws ClientException {
 		try {
 			final URIBuilder builder = new URIBuilder(tradeMeConfig.getBaseUrl());
 			builder.setPath("/v1/" + subUrl + ".json");
@@ -82,17 +82,13 @@ public class TradeMeClient {
 		}
 	}
 
-	private <T> T get(final String subUrl, final Map<String, Object> params, final Class<T> responseClass)
+	<T> T get(final String subUrl, final Map<String, Object> params, final Class<T> responseClass)
 			throws ClientException {
 		final ObjectMapper mapper = new ObjectMapper();
 		try {
 			final InputStream response = get(subUrl, params);
-			final ByteArrayOutputStream stream = new ByteArrayOutputStream();
-			IOUtils.copy(response, stream);
-			final String string = stream.toString();
-			LOGGER.info("return: " + string);
 
-			final T result = mapper.readValue(string, responseClass);
+			final T result = mapper.readValue(response, responseClass);
 			return result;
 		} catch (final IOException e) {
 			throw new ClientException(e);
@@ -121,5 +117,18 @@ public class TradeMeClient {
 			subUrl += "/" + number;
 		}
 		return get(subUrl, params, Category.class);
+	}
+
+	public CategoryDetails getCategoryDetails(final String category, final Date asAt, final Boolean catalogue)
+			throws ClientException {
+		final Map<String, Object> params = new HashMap<>();
+		if (asAt != null) {
+			params.put("as_at", asAt);
+		}
+		if (catalogue != null) {
+			params.put("catalogue", catalogue);
+		}
+		String subUrl = "Categories/" + category + "/Details";
+		return get(subUrl, params, CategoryDetails.class);
 	}
 }

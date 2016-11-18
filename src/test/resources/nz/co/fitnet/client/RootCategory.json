@@ -1,0 +1,147 @@
+{
+  "Name": "Root",
+  "Number": "",
+  "Path": "",
+  "Subcategories": [
+    {
+      "Name": "Trade Me Motors",
+      "Number": "0001-",
+      "Path": "/Trade-Me-Motors",
+      "HasClassifieds": true
+    },
+    {
+      "Name": "Trade Me Property",
+      "Number": "0350-",
+      "Path": "/Trade-Me-Property",
+      "HasClassifieds": true
+    },
+    {
+      "Name": "Trade Me Jobs",
+      "Number": "5000-",
+      "Path": "/Trade-Me-Jobs",
+      "HasClassifieds": true
+    },
+    {
+      "Name": "Antiques & collectables",
+      "Number": "0187-",
+      "Path": "/Antiques-collectables"
+    },
+    {
+      "Name": "Art",
+      "Number": "0339-",
+      "Path": "/Art"
+    },
+    {
+      "Name": "Baby gear",
+      "Number": "0351-",
+      "Path": "/Baby-gear"
+    },
+    {
+      "Name": "Books",
+      "Number": "0193-",
+      "Path": "/Books"
+    },
+    {
+      "Name": "Building & renovation",
+      "Number": "5964-",
+      "Path": "/Building-renovation"
+    },
+    {
+      "Name": "Business, farming & industry",
+      "Number": "0010-",
+      "Path": "/Business-farming-industry"
+    },
+    {
+      "Name": "Clothing & Fashion",
+      "Number": "0153-",
+      "Path": "/Clothing-Fashion"
+    },
+    {
+      "Name": "Computers",
+      "Number": "0002-",
+      "Path": "/Computers"
+    },
+    {
+      "Name": "Crafts",
+      "Number": "0341-",
+      "Path": "/Crafts"
+    },
+    {
+      "Name": "Electronics & photography",
+      "Number": "0124-",
+      "Path": "/Electronics-photography"
+    },
+    {
+      "Name": "Flatmates wanted",
+      "Number": "2975-",
+      "Path": "/Flatmates-wanted",
+      "HasClassifieds": true
+    },
+    {
+      "Name": "Gaming",
+      "Number": "0202-",
+      "Path": "/Gaming"
+    },
+    {
+      "Name": "Health & beauty",
+      "Number": "4798-",
+      "Path": "/Health-beauty"
+    },
+    {
+      "Name": "Home & living",
+      "Number": "0004-",
+      "Path": "/Home-living"
+    },
+    {
+      "Name": "Jewellery & watches",
+      "Number": "0246-",
+      "Path": "/Jewellery-watches"
+    },
+    {
+      "Name": "Mobile phones",
+      "Number": "0344-",
+      "Path": "/Mobile-phones"
+    },
+    {
+      "Name": "Movies & TV",
+      "Number": "0003-",
+      "Path": "/Movies-TV"
+    },
+    {
+      "Name": "Music & instruments",
+      "Number": "0343-",
+      "Path": "/Music-instruments"
+    },
+    {
+      "Name": "Pets & animals",
+      "Number": "9425-",
+      "Path": "/Pets-animals"
+    },
+    {
+      "Name": "Pottery & glass",
+      "Number": "0340-",
+      "Path": "/Pottery-glass"
+    },
+    {
+      "Name": "Services",
+      "Number": "9334-",
+      "Path": "/Services",
+      "HasClassifieds": true
+    },
+    {
+      "Name": "Sports",
+      "Number": "0005-",
+      "Path": "/Sports"
+    },
+    {
+      "Name": "Toys & models",
+      "Number": "0347-",
+      "Path": "/Toys-models"
+    },
+    {
+      "Name": "Travel, events & activities",
+      "Number": "9374-",
+      "Path": "/Travel-events-activities"
+    }
+  ]
+}

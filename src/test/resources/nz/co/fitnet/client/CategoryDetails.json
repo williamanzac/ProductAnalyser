@@ -1,0 +1,90 @@
+{
+ "CategoryId": 1443,
+ "Name": "Advertising",
+ "Path": "/Antiques-collectables/Advertising",
+ "CanListAuctions": true,
+ "CanListClassifieds": false,
+ "CanRelist": true,
+ "DefaultDuration": 7,
+ "AllowedDurations": [
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  10
+ ],
+ "Fees": {
+  "Bundle": 3.95,
+  "EndDate": 0.25,
+  "Feature": 3.45,
+  "Gallery": 0.55,
+  "Reserve": 0.25,
+  "Subtitle": 0.55,
+  "TenDays": 0.25,
+  "Withdrawal": 3,
+  "HighVolume": 0.1,
+  "MaximumSuccessFee": 149,
+  "SuccessFeeTiers": [
+   {
+    "MinimumTierPrice": 0
+   },
+   {
+    "MinimumTierPrice": 1,
+    "PercentageFee": 7.9
+   }
+  ]
+ },
+ "FreePhotoCount": 20,
+ "MaximumPhotoCount": 20,
+ "Charities": [
+  {
+   "CharityType": 1,
+   "ImageSource": "https://www.tmsandbox.co.nz/images/sell/kiwis-for-kiwi-logo-3x.png",
+   "Description": "Kiwis for kiwi",
+   "Tagline": "Protecting kiwi and the places they live."
+  },
+  {
+   "CharityType": 2,
+   "ImageSource": "https://www.tmsandbox.co.nz/images/sell/plunket-logo-3x.png",
+   "Description": "Plunket",
+   "Tagline": "A major provider of well child health services in NZ."
+  }
+ ],
+ "Promotions": [
+  {
+   "Id": 1,
+   "Name": "Basic",
+   "Description": "Lowest position in category",
+   "Price": 0,
+   "MinimumPhotoCount": 0
+  },
+  {
+   "Id": 2,
+   "Name": "Gallery",
+   "Description": "Good position in category",
+   "Price": 0.55,
+   "OriginalPrice": 0.55,
+   "MinimumPhotoCount": 0
+  },
+  {
+   "Id": 3,
+   "Name": "Feature",
+   "Description": "Better position in category",
+   "Price": 3.45,
+   "OriginalPrice": 3.45,
+   "MinimumPhotoCount": 0
+  },
+  {
+   "Id": 4,
+   "Name": "Feature Combo",
+   "Description": "3.5x more likely to sell\r\nBest position in category",
+   "Price": 3.95,
+   "OriginalPrice": 3.95,
+   "Recommended": true,
+   "MinimumPhotoCount": 0
+  }
+ ],
+ "EmbeddedContentOptions": []
+}
